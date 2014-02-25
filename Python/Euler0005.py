@@ -44,7 +44,6 @@ def euler0005(size):
     primeDivisors = []
     for i in divisors:
         primes = primeFactors(i)
-        print(i, primes)
         for j in primes:
             while primes.count(j) > primeDivisors.count(j):
                 primeDivisors.append(j)
